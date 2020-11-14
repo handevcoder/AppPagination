@@ -19,3 +19,7 @@ data class ModelUser(
 	@field:SerializedName("total_pages")
 	val totalPages: Int
 )
+data class DataItem(
+	@field:SerializedName("total_pages")
+	val totalPages: Int
+)

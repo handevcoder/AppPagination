@@ -3,7 +3,6 @@ package com.example.apppagination
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.apppagination.databinding.ActivityMainBinding
 import com.example.apppagination.model.ModelUser
 import com.example.apppagination.util.UserClient
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.rvMain.adapter = adapter
 
-     //  binding.rvMain.layoutManager =   LinearLayoutManager(this)
         UserClient.userService.getAllUser().enqueue(object : Callback<ModelUser> {
             override fun onResponse(
                 call: Call<ModelUser>,
